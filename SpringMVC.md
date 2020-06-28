@@ -1,6 +1,8 @@
 Welcome to the Spring-MVC- wiki!
 
-<div w3-include-html="header.html"></div>
+
+
+<link rel="import" href="/header.html">
 
 ### WEb.xml
 
