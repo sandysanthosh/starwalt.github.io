@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Starwalt Vellore free website">
+      <meta name="generator" content="http://starwalt.in/">
+      <meta name="keyword" content="Starwalt is an Internet Company, We help you to develop your business in Online, Websites,Digital      Marketing Services.">
+      <meta name="author" content="Santhosh">
+    
+  <title>A to Z Resources for Students</title>
+    
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/blog-post.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+    
+    ​<style>
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+</style>
+
+<body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Starwalt Company</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+             <li class="nav-item active">
+              <a class="nav-link" href="techblog/index.html">TECH-Blog
+              <span class="sr-only">(current)</span>
+            </a>
+                </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="http://starwalt.in/">Home
+              <span class="sr-only">(current)</span>
+            </a>
+            </li>
+            
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+
+      <!-- Post Content Column -->
+      <div class="col-lg-8">
+
+        <!-- Title -->
+        <h1 class="mt-4">A to Z Resources for Students</h1>
+
+        <!-- Author -->
+        <p class="lead">
+          by
+          <a href="http://starwalt.in/">Starwalt Company</a>
+        </p>
+
+        <hr>
+
+        <!-- Date/Time -->
+        <p>Posted on April , 2020 at 12:00 PM</p>
+
+       
+
+     <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1 id="a-to-z-resources-for-studentsboy"><img src="https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg" alt="Awesome" /></h1>
+
+
+
+<p><em>Image credits: Google</em></p>
+        
+        <body>
+          
+          <div class="container-lg px-3 my-5 markdown-body">
+      
+
+      <h1 id="owasp">OWASP</h1>
+<p>Web Security Tools &amp; Methods</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>We cannot  firewall  or  patch  our way to secure Websites. Security professionals used to think that firewalls, Secure Sockets Layer (SSL), patching, and privacy policies were enough. Today, however, these methods are outdated and ineffective, as attacks on prominent, well-protected Websites are occurring every day. Citigroup, PBS, Sega, Nintendo, Gawker, AT&amp;T, the CIA, the US Senate, NASA, the NYSE, Zynga, and thousands of others have something in common: all of them have had Websites compromised in the last year.
+</code></pre></div></div>
+
+<p># Top 10 java defenses for website security:</p>
+
+<h1 id="owasp-cheat-sheet">owasp cheat-sheet</h1>
+
+<h1 id="1query-parametized">1.query parametized;</h1>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>antomy of a sql
+
+anatomy of a sql injection Attack;
+
+query parameterization in java:
+
+            string name = request.getParameter("newName");
+            string id = request.getParameter("id");
+
+            preparedStatement pstmr = con.preparedstatement("update employees set 
+            name=? where id= ?");
+            pstmt.setStringO( 1 , newName);
+            pstmt.setString( 2, id);
+</code></pre></div></div>
+
+<h1 id="2-password-storage">2. password storage:</h1>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  store password based on need:
+
+        use a  salt( de-duplication)
+        SCRYPT/PBKDF2(slow, peroformance hit,easy)
+        HMAC(require good key storage, tough)
+</code></pre></div></div>
+
+<p>1.do not limit the type of characters or length of user password</p>
+
+<p>2.use a cryptographically strong credentials-sepcific salt</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>                protect([salt]+[password]);
+            use a 32 char or 64 char salt
+            do not depend on hiding,spitting
+</code></pre></div></div>
+
+<p># 3a) impose difficult verification on the attack(strong/fast)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>             HMAC-SHA-256[(private key],[salt]+[password])
+</code></pre></div></div>
+
+<p># 3b) impose difficult verification on attack and defender</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>            PBKDF 2 when  FIPS certification
+            scrypt where resisting any/all hardware
+
+            XSS defense cross site scripting:
+
+            no third party libraries
+            more complete api
+</code></pre></div></div>
+
+<p>html contexts
+xml contexts</p>
+
+<p># web page built in java JSP is a vulnerable to XSS:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        solution:
+</code></pre></div></div>
+
+<p>1)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    &lt;input type="text" name="data" value="&lt;%= Encode.forHthmlAttribute(datavalue)%"/&gt;
+</code></pre></div></div>
+
+<p>2)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  &lt;textarea name="text"&gt;&lt;%= Encode.forHtmlContect(textValue) %"/&gt;
+</code></pre></div></div>
+
+<p>3)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  &lt;button
+  onclick="alert('&lt;%= Encode.forJavascriptAttribute(alertMsg) %&gt;');
+  click me
+  &lt;/button&gt;
+</code></pre></div></div>
+
+<p>4)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      &lt;script type="text/javascript"&gt;
+      var msg="&lt;%= Encode.forJavascriptBlock(message) %&gt;";
+      alert*msg);
+      &lt;/script&gt;
+</code></pre></div></div>
+
+<p># html sanitization</p>
+
+<p># code google owasp java html sanitization</p>
+
+<p># Bean Validation:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Fields
+Properties
+Classes
+
+@Constraints 
+
+(@Pattern, @Digits, @Min, @Max, @Size, @Past, @Future, @CreditCardNumber, @Email, @URL, etc.)
+
+              @Size(min = 10, max = 500)
+              private String message;
+              @Past
+              private Date birthDate;
+              @Pattern(regexp = "[a-zA-Z0-9 ]", message="article.title.error")
+              private String articleTitle;
+</code></pre></div></div>
+
+<p># Implementing input validation:</p>
+
+<p># Credinital and PII information:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   https://cheatsheetseries.owasp.org/cheatsheets/HTML5_Security_Cheat_Sheet.html
+  
+  &lt;input type="text" spellcheck="false" autocomplete="off" autocorrect="off" autocapitalize="off"&gt;&lt;/input&gt;
+
+        spellcheck="false"
+        autocomplete="off"
+        autocorrect="off"
+        autocapitalize="off"
+</code></pre></div></div>
+
+<p># WebSocket implementation hints:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>            Access filtering through the "Origin" HTTP request header
+            Input / Output validation
+            Authentication
+            Authorization
+            Access token explicit invalidation
+            Confidentiality and Integrity
+</code></pre></div></div>
+
+<p># Top 10 Web Application Security Risks</p>
+
+<p># Injection.
+     Injection flaws, such as SQL, NoSQL, OS, and LDAP injection, occur when untrusted data is sent to an interpreter as part of a command or query. The attacker’s hostile data can trick the interpreter into executing unintended commands or accessing data without proper authorization.</p>
+
+<p># Broken Authentication.
+             Application functions related to authentication and session management are often implemented incorrectly, allowing attackers to compromise passwords, keys, or session tokens, or to exploit other implementation flaws to assume other users’ identities temporarily or permanently.</p>
+
+<p># Sensitive Data Exposure.
+     Many web applications and APIs do not properly protect sensitive data, such as financial, healthcare, and PII. Attackers may steal or modify such weakly protected data to conduct credit card fraud, identity theft, or other crimes. Sensitive data may be compromised without extra protection, such as encryption at rest or in transit, and requires special precautions when exchanged with the browser.</p>
+
+<p># XML External Entities (XXE).
+         Many older or poorly configured XML processors evaluate external entity references within XML documents. External entities can be used to disclose internal files using the file URI handler, internal file shares, internal port scanning, remote code execution, and denial of service attacks.</p>
+
+<p># Broken Access Control. 
+     Restrictions on what authenticated users are allowed to do are often not properly enforced. Attackers can exploit these flaws to access unauthorized functionality and/or data, such as access other users’ accounts, view sensitive files, modify other users’ data, change access rights, etc.</p>
+
+<p># Security Misconfiguration. 
+        Security misconfiguration is the most commonly seen issue. This is commonly a result of insecure default configurations, incomplete or ad hoc configurations, open cloud storage, misconfigured HTTP headers, and verbose error messages containing sensitive information. Not only must all operating systems, frameworks, libraries, and applications be securely configured, but they must be patched/upgraded in a timely fashion.</p>
+
+<p># Cross-Site Scripting XSS. 
+        XSS flaws occur whenever an application includes untrusted data in a new web page without proper validation or escaping, or updates an existing web page with user-supplied data using a browser API that can create HTML or JavaScript. XSS allows attackers to execute scripts in the victim’s browser which can hijack user sessions, deface web sites, or redirect the user to malicious sites.</p>
+
+<p># Insecure Deserialization. 
+    Insecure deserialization often leads to remote code execution. Even if deserialization flaws do not result in remote code execution, they can be used to perform attacks, including replay attacks, injection attacks, and privilege escalation attacks.
+    Using Components with Known Vulnerabilities. Components, such as libraries, frameworks, and other software modules, run with the same</p>
+
+<p># privileges as the application. 
+        If a vulnerable component is exploited, such an attack can facilitate serious data loss or server takeover. Applications and APIs using components with known vulnerabilities may undermine application defenses and enable various attacks and impacts.</p>
+
+<p># Insufficient Logging &amp; Monitoring. 
+         Insufficient logging and monitoring, coupled with missing or ineffective integration with incident response, allows attackers to further attack systems, maintain persistence, pivot to more systems, and tamper, extract, or destroy data. Most breach studies show time to detect a breach is over 200 days, typically detected by external parties rather than internal processes or monitoring.</p>
+
+<p><a href="http://starwalt.in/Blogs/index.html">Follow us on Blog</a></p>
+
+
+
+      
+      <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
+        This site is open source. <a href="https://github.com/sandysanthosh/OWASP/edit/master/README.md">Improve this page</a>.
+      </div>
+      
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+          
+          
+        </body>
+        </html
