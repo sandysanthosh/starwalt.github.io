@@ -1,3 +1,39 @@
+<!-- portfolio-docs-v1 -->
+# Starwalt Github Io
+
+> A historical GitHub Pages knowledge hub containing web, Java, Spring, interview-preparation, and prototype material.
+
+## Repository Context
+
+| Item | Details |
+|---|---|
+| Project type | Knowledge hub / static site |
+| Technologies | HTML, CSS, JavaScript, Java and Spring learning material |
+| Primary focus | Technical notes, prototypes, and web publishing |
+| Status | Historical learning archive. |
+
+## What This Repository Demonstrates
+
+- Practical, hands-on exploration of **technical notes, prototypes, and web publishing**
+- Ability to organise examples and technical material for later reuse
+- Breadth across web, backend, API, and software-engineering concepts
+
+## Getting Started
+
+Open `index.html` locally or serve the repository with a static HTTP server.
+
+### Key contents
+
+`.github`, `.travis.yml`, `API-Development-Tool`, `Apartment`, `Bootstrap.html`, `CI-CD-Pipeline`, `CNAME`, `CPANEL`
+
+## Portfolio Note
+
+This repository is part of my earlier learning and experimentation archive. My current professional focus is **Java, Spring Boot, microservices, REST APIs, Kafka, cloud-native engineering, and banking technology**. See my [GitHub profile](https://github.com/sandysanthosh) for current positioning and featured work.
+
+---
+
+## Original Documentation
+
 
 #### Starwalt:
 
